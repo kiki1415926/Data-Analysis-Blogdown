@@ -1,0 +1,35 @@
+---
+title: "Hello R Markdown"
+author: "Frida Gomam"
+date: 2015-07-23T21:13:14-05:00
+categories: ["R"]
+tags: ["R Markdown", "plot", "regression"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+# R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+You can embed an R code chunk like this:
+
+```{r}
+install.packages("devtools")
+devtools::install_github("hodgettsp/cesR")
+library(cesR)
+library(dplyr)
+library(labelled)
+library("tidyverse")
+get_cescodes()
+ces2019_web <- to_factor(ces2019_web)
+ces2019_web %>% ggplot(aes(x=cps19_province)) + geom_bar() + coord_flip()
+```
+
+# References
+- Wickham et al., (2019). Welcome to the tidyverse. Journal of Open
+  Source Software, 4(43), 1686, https://doi.org/10.21105/joss.01686
+- Yihui Xie (2020). blogdown: Create Blogs and Websites with R Markdown.
+  R package version 0.20.

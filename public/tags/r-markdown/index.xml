@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R Markdown on A Hugo website</title>
+    <link>/tags/r-markdown/</link>
+    <description>Recent content in R Markdown on A Hugo website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate><atom:link href="/tags/r-markdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello R Markdown</title>
+      <link>/2015/07/23/hello-r-markdown/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>/2015/07/23/hello-r-markdown/</guid>
+      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+You can embed an R code chunk like this:
+install.packages(&amp;quot;opendatatoronto&amp;quot;) ## Installing package into &amp;#39;/home/rstudio-user/R/x86_64-pc-linux-gnu-library/4.0&amp;#39; ## (as &amp;#39;lib&amp;#39; is unspecified) install.packages(&amp;quot;plyr&amp;quot;) ## Installing package into &amp;#39;/home/rstudio-user/R/x86_64-pc-linux-gnu-library/4.0&amp;#39; ## (as &amp;#39;lib&amp;#39; is unspecified) library(opendatatoronto) library(plyr) package &amp;lt;- show_package(&amp;quot;86a256ce-cf39-4e78-b43a-4f24aafe9747&amp;quot;) package &amp;lt;- package %&amp;gt;% list_package_resources() my_data &amp;lt;- package %&amp;gt;% get_resource() my_data &amp;lt;- my_data[1] my_data ## $Sheet1 ## # A tibble: 2,238 x 22 ## Timestamp `1.</description>
+    </item>
+    
+  </channel>
+</rss>
