@@ -6,16 +6,7 @@
     <description>Recent content in regression on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Sep 2020 21:13:14 -0500</lastBuildDate><atom:link href="/tags/regression/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>ces2019_web Data Analysis</title>
-      <link>/2020/09/21/ces2019_web-data-analysis/</link>
-      <pubDate>Mon, 21 Sep 2020 21:13:14 -0500</pubDate>
-      
-      <guid>/2020/09/21/ces2019_web-data-analysis/</guid>
-      <description>Abstract  Introduction  Data discussion  Graph  Graph discussion install.packages(&amp;quot;devtools&amp;quot;) ## Installing package into &amp;#39;/home/rstudio-user/R/x86_64-pc-linux-gnu-library/4.0&amp;#39; ## (as &amp;#39;lib&amp;#39; is unspecified) devtools::install_github(&amp;quot;hodgettsp/cesR&amp;quot;) ## Skipping install of &amp;#39;cesR&amp;#39; from a github remote, the SHA1 (7c780beb) has not changed since last install. ## Use `force = TRUE` to force installation library(cesR) library(dplyr) ## ## Attaching package: &amp;#39;dplyr&amp;#39; ## The following objects are masked from &amp;#39;package:stats&amp;#39;: ## ## filter, lag ## The following objects are masked from &amp;#39;package:base&amp;#39;: ## ## intersect, setdiff, setequal, union library(labelled) get_cescodes() ## index ces_survey_code get_ces_call_char ## 1 1 ces2019_web &amp;quot;ces2019_web&amp;quot; ## 2 2 ces2019_phone &amp;quot;ces2019_phone&amp;quot; ## 3 3 ces2015_web &amp;quot;ces2015_web&amp;quot; ## 4 4 ces2015_phone &amp;quot;ces2015_phone&amp;quot; ## 5 5 ces2015_combo &amp;quot;ces2015_combo&amp;quot; ## 6 6 ces2011 &amp;quot;ces2011&amp;quot; ## 7 7 ces2008 &amp;quot;ces2008&amp;quot; ## 8 8 ces2004 &amp;quot;ces2004&amp;quot; ## 9 9 ces0411 &amp;quot;ces0411&amp;quot; ## 10 10 ces0406 &amp;quot;ces0406&amp;quot; ## 11 11 ces2000 &amp;quot;ces2000&amp;quot; ## 12 12 ces1997 &amp;quot;ces1997&amp;quot; ## 13 13 ces1993 &amp;quot;ces1993&amp;quot; ## 14 14 ces1988 &amp;quot;ces1988&amp;quot; ## 15 15 ces1984 &amp;quot;ces1984&amp;quot; ## 16 16 ces1974 &amp;quot;ces1974&amp;quot; ## 17 17 ces7480 &amp;quot;ces7480&amp;quot; ## 18 18 ces72_jnjl &amp;quot;ces72_jnjl&amp;quot; ## 19 19 ces72_sep &amp;quot;ces72_sep&amp;quot; ## 20 20 ces72_nov &amp;quot;ces72_nov&amp;quot; ## 21 21 ces1968 &amp;quot;ces1968&amp;quot; ## 22 22 ces1965 &amp;quot;ces1965&amp;quot; get_ces(&amp;quot;ces2019_web&amp;quot;) ## TO CITE THIS SURVEY FILE: ## ## - Stephenson, Laura B; Harell, Allison; Rubenson, Daniel; Loewen, Peter John, 2020, &amp;#39;2019 Canadian Election Study - Online Survey&amp;#39;, https://doi.</description>
-    </item>
-    
+    <lastBuildDate>Sat, 19 Sep 2020 21:13:14 -0500</lastBuildDate><atom:link href="/tags/regression/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ces2019_web Data Analysis</title>
       <link>/2020/09/19/ces2019_web-data-analysis/</link>
