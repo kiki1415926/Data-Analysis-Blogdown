@@ -62,13 +62,13 @@
 
   <article class="article">
     
-    <span class="article-duration">3 min read</span>
+    <span class="article-duration">2 min read</span>
     
 
     <h1 class="article-title">ces2019_web Data Analysis</h1>
 
     
-    <span class="article-date">2020-09-19</span>
+    <span class="article-date">2020-09-21</span>
     
 
     <div class="article-content">
@@ -77,55 +77,36 @@
 
 <div id="abstract" class="section level1">
 <h1>Abstract</h1>
-<p>This CES study is used to gather Canadians’ attitude about the federal election in 2019.</p>
 </div>
 <div id="introduction" class="section level1">
 <h1>Introduction</h1>
-<p>This Canadian Election Study: ces2019_web is an online survey which collect the basic information about people and their attitude to different parties and governement. This survey is to study the reason why people vote for a specific party, and what feature of people will affect the vote result.</p>
-<p>First paragraph: General. Motivational. Majors specific finding.</p>
-<p>Second paragraph: More about what you did and found.</p>
-<p>Third paragraph: Outline of the paper. Future work. Weaknesses.</p>
-<pre class="r"><code>get_cescodes()
-##    index ces_survey_code get_ces_call_char
-## 1      1     ces2019_web     &quot;ces2019_web&quot;
-## 2      2   ces2019_phone   &quot;ces2019_phone&quot;
-## 3      3     ces2015_web     &quot;ces2015_web&quot;
-## 4      4   ces2015_phone   &quot;ces2015_phone&quot;
-## 5      5   ces2015_combo   &quot;ces2015_combo&quot;
-## 6      6         ces2011         &quot;ces2011&quot;
-## 7      7         ces2008         &quot;ces2008&quot;
-## 8      8         ces2004         &quot;ces2004&quot;
-## 9      9         ces0411         &quot;ces0411&quot;
-## 10    10         ces0406         &quot;ces0406&quot;
-## 11    11         ces2000         &quot;ces2000&quot;
-## 12    12         ces1997         &quot;ces1997&quot;
-## 13    13         ces1993         &quot;ces1993&quot;
-## 14    14         ces1988         &quot;ces1988&quot;
-## 15    15         ces1984         &quot;ces1984&quot;
-## 16    16         ces1974         &quot;ces1974&quot;
-## 17    17         ces7480         &quot;ces7480&quot;
-## 18    18      ces72_jnjl      &quot;ces72_jnjl&quot;
-## 19    19       ces72_sep       &quot;ces72_sep&quot;
-## 20    20       ces72_nov       &quot;ces72_nov&quot;
-## 21    21         ces1968         &quot;ces1968&quot;
-## 22    22         ces1965         &quot;ces1965&quot;
-get_ces(&quot;ces2019_web&quot;)
-## TO CITE THIS SURVEY FILE:
-## 
-## - Stephenson, Laura B; Harell, Allison; Rubenson, Daniel; Loewen, Peter John, 2020, &#39;2019 Canadian Election Study - Online Survey&#39;, https://doi.org/10.7910/DVN/DUS88V, Harvard Dataverse, V1
-## 
-## - Stephenson, Laura, Allison Harrel, Daniel Rubenson and Peter Loewen. Forthcoming. &#39;Measuring Preferences and Behaviour in the 2019 Canadian Election Study,&#39; Canadian Journal of Political Science.
-## 
-## LINK: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DUS88V
-ces2019_web &lt;- to_factor(ces2019_web)</code></pre>
 </div>
 <div id="data-discussion" class="section level1">
 <h1>Data discussion</h1>
-<p>The ces2019_web dataset is collected from Canadian citizens and permanent residents at least 18 years old in 2019. The columns include candidates’ citizenship, age, gender, living province, education degree, the main issue they are interested in, different attitude to parties about some issues, voting plan.</p>
 </div>
 <div id="graph" class="section level1">
 <h1>Graph</h1>
-<pre class="r"><code>get_cescodes()
+</div>
+<div id="graph-discussion" class="section level1">
+<h1>Graph discussion</h1>
+<pre class="r"><code>install.packages(&quot;devtools&quot;)
+## Installing package into &#39;/home/rstudio-user/R/x86_64-pc-linux-gnu-library/4.0&#39;
+## (as &#39;lib&#39; is unspecified)
+devtools::install_github(&quot;hodgettsp/cesR&quot;)
+## Skipping install of &#39;cesR&#39; from a github remote, the SHA1 (7c780beb) has not changed since last install.
+##   Use `force = TRUE` to force installation
+library(cesR)
+library(dplyr)
+## 
+## Attaching package: &#39;dplyr&#39;
+## The following objects are masked from &#39;package:stats&#39;:
+## 
+##     filter, lag
+## The following objects are masked from &#39;package:base&#39;:
+## 
+##     intersect, setdiff, setequal, union
+library(labelled)
+get_cescodes()
 ##    index ces_survey_code get_ces_call_char
 ## 1      1     ces2019_web     &quot;ces2019_web&quot;
 ## 2      2   ces2019_phone   &quot;ces2019_phone&quot;
@@ -167,11 +148,8 @@ library(&quot;tidyverse&quot;)
 ## ── Conflicts ──────────────────────────────── tidyverse_conflicts() ──
 ## x dplyr::filter() masks stats::filter()
 ## x dplyr::lag()    masks stats::lag()
-ces2019_web %&gt;% ggplot(aes(x=cps19_education)) + geom_bar() + coord_flip()</code></pre>
-<p><img src="/post/2020-09-19-r-rmarkdown_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
-</div>
-<div id="graph-discussion" class="section level1">
-<h1>Graph discussion</h1>
+ces2019_web %&gt;% ggplot(aes(x=cps19_province)) + geom_bar()</code></pre>
+<p><img src="/post/2015-07-23-r-rmarkdown_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
 </div>
 <div id="references" class="section level1">
 <h1>References</h1>

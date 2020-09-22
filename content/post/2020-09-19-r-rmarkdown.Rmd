@@ -8,30 +8,45 @@ tags: ["R Markdown", "plot", "regression"]
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(collapse = TRUE)
-```
-
-# Abstract
-
-# Introduction
-
-# Data discussion
-
-# Graph
-
-# Graph discussion
-
-```{r}
 install.packages("devtools")
 devtools::install_github("hodgettsp/cesR")
 library(cesR)
 library(dplyr)
 library(labelled)
+```
+
+# Abstract
+This CES study is used to gather Canadians' attitude about the federal election in 2019.
+
+# Introduction
+This Canadian Election Study: ces2019_web is an online survey which collect the basic information about people and their attitude to different parties and governement. This survey is to study the reason why people vote for a specific party, and what feature of people will affect the vote result. 
+
+First paragraph: General. Motivational. Majors specific finding. 
+
+Second paragraph: More about what you did and found.
+
+Third paragraph: Outline of the paper. Future work. Weaknesses.
+
+```{r}
+get_cescodes()
+get_ces("ces2019_web")
+ces2019_web <- to_factor(ces2019_web)
+```
+
+# Data discussion
+The ces2019_web dataset is collected from Canadian citizens and permanent residents at least 18 years old in 2019. The columns include candidates' citizenship, age, gender, living province, education degree, the main issue they are interested in, different attitude to parties about some issues, voting plan.
+
+# Graph
+```{r}
 get_cescodes()
 get_ces("ces2019_web")
 ces2019_web <- to_factor(ces2019_web)
 library("tidyverse")
-ces2019_web %>% ggplot(aes(x=cps19_province)) + geom_bar()
+ces2019_web %>% ggplot(aes(x=cps19_education)) + geom_bar() + coord_flip()
 ```
+
+# Graph discussion
+
 
 # References
 - Wickham et al., (2019). Welcome to the tidyverse. Journal of Open
