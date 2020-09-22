@@ -34,7 +34,7 @@
       <guid>/2015/07/23/hello-r-markdown/</guid>
       <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
 You can embed an R code chunk like this:
-install.packages(&amp;quot;opendatatoronto&amp;quot;) ## Installing package into &amp;#39;/home/rstudio-user/R/x86_64-pc-linux-gnu-library/4.0&amp;#39; ## (as &amp;#39;lib&amp;#39; is unspecified) install.packages(&amp;quot;plyr&amp;quot;) ## Installing package into &amp;#39;/home/rstudio-user/R/x86_64-pc-linux-gnu-library/4.0&amp;#39; ## (as &amp;#39;lib&amp;#39; is unspecified) library(opendatatoronto) library(plyr) package &amp;lt;- show_package(&amp;quot;86a256ce-cf39-4e78-b43a-4f24aafe9747&amp;quot;) package &amp;lt;- package %&amp;gt;% list_package_resources() my_data &amp;lt;- package %&amp;gt;% get_resource() my_data &amp;lt;- my_data[1] my_data ## $Sheet1 ## # A tibble: 2,238 x 22 ## Timestamp `1.</description>
+install.packages(&amp;quot;devtools&amp;quot;) ## Installing package into &amp;#39;/home/rstudio-user/R/x86_64-pc-linux-gnu-library/4.0&amp;#39; ## (as &amp;#39;lib&amp;#39; is unspecified) devtools::install_github(&amp;quot;hodgettsp/cesR&amp;quot;) ## Skipping install of &amp;#39;cesR&amp;#39; from a github remote, the SHA1 (7c780beb) has not changed since last install.</description>
     </item>
     
     <item>

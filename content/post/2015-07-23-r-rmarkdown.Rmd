@@ -22,10 +22,11 @@ devtools::install_github("hodgettsp/cesR")
 library(cesR)
 library(dplyr)
 library(labelled)
-library("tidyverse")
 get_cescodes()
+get_ces("ces2019_web")
 ces2019_web <- to_factor(ces2019_web)
-ces2019_web %>% ggplot(aes(x=cps19_province)) + geom_bar() + coord_flip()
+library("tidyverse")
+ces2019_web %>% ggplot(aes(x=cps19_province)) + geom_bar()
 ```
 
 # References
