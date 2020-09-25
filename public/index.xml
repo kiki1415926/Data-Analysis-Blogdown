@@ -14,8 +14,7 @@
       
       <guid>/2020/09/19/ces2019_web-data-analysis/</guid>
       <description>Abstract This CES study is used to gather Canadians’ attitude about the federal election in 2019.
- Introduction This Canadian Election Study: ces2019_web is an online survey which collect the basic information about people and their attitude to different parties and governement. This survey is to study the reason why people vote for a specific party, and what feature of people will affect the vote result.
-First paragraph: General. Motivational.</description>
+ Introduction This Canadian Election Study: ces2019_web is an online survey which collect the basic information about people and their attitude to different parties and governement. This survey is to study the reason why people vote for a specific party, and what feature of people will affect the vote result. I generated a geom_bar which shows the count of people of different education category.</description>
     </item>
     
     <item>
